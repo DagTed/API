@@ -1,4 +1,5 @@
 var i = 0;
+var img = ["../images/chandler-bing_1.jpg", "../images/monica_1.jpg", "../images/phoebe_3.jpg", "../images/ross_1.jpg", "../images/joey_1.jpg", "../images/friends_2.jpg"]
 const url ='https://friends-quotes-api.herokuapp.com/quotes';
 function init(){
     fetch(url).then(function (response){
@@ -20,25 +21,25 @@ function init(){
 }
 function images(dimg){
     if(dimg == "Chandler"){
-        return "../images/chandler-bing_1.jpg";
+        return img[0];
     }
     else if(dimg == "Monica"){
-        return "../images/monica_1.jpg";
+        return img[1];
     }
     else if(dimg == "Phoebe"){
-        return "../images/phoebe_3.jpg";
+        return img[2];
     }
     else if(dimg == "Ross"){
-        return "../images/ross_1.jpg";
+        return img[3];
     }
     else if(dimg == "Joey"){
-        return "../images/joey_1.jpg";
+        return img[4];
     }
     else if(dimg == "Rachel"){
-        return "../images/rachel_1.png";
+        return img[5];
     }
     else{
-        return "../images/friends_2.jpg";
+        return img[6];
     }
 }
 

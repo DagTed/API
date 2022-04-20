@@ -1,5 +1,5 @@
 var i = 0;
-var img = ['/../images/chandler-bing_1.jpg', '/../images/monica_1.jpg', '/../images/phoebe_3.jpg', '/../images/ross_1.jpg', '/../images/joey_1.jpg']
+var imgc = ['../images/chandler-bing_1.jpg', '../images/monica_1.jpg', '../images/phoebe_3.jpg', '../images/ross_1.jpg', '../images/joey_1.jpg']
 const url ='https://friends-quotes-api.herokuapp.com/quotes';
 function init(){
     fetch(url).then(function (response){
@@ -21,25 +21,25 @@ function init(){
 }
 function images(dimg){
     if(dimg == "Chandler"){
-        return img[0];
+        return imgc[0];
     }
     else if(dimg == "Monica"){
-        return img[1];
+        return imgc[1];
     }
     else if(dimg == "Phoebe"){
-        return img[2];
+        return imgc[2];
     }
     else if(dimg == "Ross"){
-        return img[3];
+        return imgc[3];
     }
     else if(dimg == "Joey"){
-        return img[4];
+        return imgc[4];
     }
     else if(dimg == "Rachel"){
-        return img[5];
+        return imgc[5];
     }
     else{
-        return img[6];
+        return imgc[6];
     }
 }
 
@@ -59,8 +59,6 @@ function previous(){
     init();
     
 }
-
- 
  window.onload = function showquotes(){
     init();
     document.getElementById("nextbtn").addEventListener("click", next);

@@ -1,5 +1,5 @@
 var i = 0;
-var img = ["../images/chandler-bing_1.jpg", "../images/monica_1.jpg", "../images/phoebe_3.jpg", "../images/ross_1.jpg", "../images/joey_1.jpg", "../images/friends_2.jpg"]
+var img = ['/../images/chandler-bing_1.jpg', '/../images/monica_1.jpg', '/../images/phoebe_3.jpg', '/../images/ross_1.jpg', '/../images/joey_1.jpg']
 const url ='https://friends-quotes-api.herokuapp.com/quotes';
 function init(){
     fetch(url).then(function (response){

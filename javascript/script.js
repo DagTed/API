@@ -1,7 +1,7 @@
 var i = 0;
 var imgc = ['../images/chandler-bing_1.jpg', '../images/monica_1.jpg', '../images/phoebe_3.jpg', '../images/ross_1.jpg', '../images/joey_1.jpg']
 const url ='https://friends-quotes-api.herokuapp.com/quotes';
-//  <img src="${images(data[i].character)}"  class="card-img-top mx-auto d-block" alt="...">
+
 function init(){
     fetch(url).then(function (response){
         return response.json();
@@ -9,7 +9,7 @@ function init(){
         quote = document.getElementById("quotes");
         quote.innerHTML = `<div class="col-sm-3">
         <div class="card shadow-lg bg-body rounded-3 " style="width: 18rem; height: auto;">
-        
+        <img src="${images(data[i].character)}"  class="card-img-top mx-auto d-block" alt="...">
         <div class="card-body b-bg"><blockquote class="blockquote">
         <p>"${data[i].quote}"</p>
         <footer class="blockquote-footer">${data[i].character}<cite title="Source Title"> 

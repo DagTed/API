@@ -20,26 +20,26 @@ function init(){
 
 }
 function images(dimg){
-    if(dimg == "Chandler"){
+    if(dimg === "Chandler"){
         return imgc[0];
     }
-    else if(dimg == "Monica"){
+    else if(dimg === "Monica"){
         return imgc[1];
     }
-    else if(dimg == "Phoebe"){
+    else if(dimg === "Phoebe"){
         return imgc[2];
     }
-    else if(dimg == "Ross"){
+    else if(dimg === "Ross"){
         return imgc[3];
     }
-    else if(dimg == "Joey"){
+    else if(dimg === "Joey"){
         return imgc[4];
     }
-    else if(dimg == "Rachel"){
+    else if(dimg === "Rachel"){
         return imgc[5];
     }
     else{
-        return imgc[6];
+        return 0;
     }
 }
 
@@ -53,7 +53,7 @@ function next(){
 }
 function previous(){
     i--;
-    if(i<=0){
+    if(i<0){
         i=18;
     }
     init();
